@@ -394,6 +394,15 @@ body {
   webkit-tap-highlight-color: #0085a1;
 }
 
+.transparentButton {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
 //auto search
 .autocomplete-wrapper { margin: 44px auto 44px; max-width: 600px; }
 .autocomplete-wrapper label { display: block; margin-bottom: .75em; color: #3f4e5e; font-size: 1.25em; }
