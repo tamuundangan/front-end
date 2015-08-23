@@ -29,11 +29,15 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
 <script>
 $(document).ready(function(){
     $("#form-komoditas").hide();
     $("#show").click(function(){
         $("#form-komoditas").show();
+    });
+	$("#showMap").click(function(){
+        loadScript();
     });
 });
 </script>
@@ -105,8 +109,10 @@ $(document).ready(function(){
                             <p><input type="text" placeholder="Date" id="datepicker"></p>
  
                             <p class="help-block text-danger"></p>
+							<center><button id="showMap">search</button></center>
                         </div>
                     </div>
+					
 				<center><p>atau</p></center>
 				<center><button id="show" class="transparentButton">Input data</button></center>
 				<div id="form-komoditas">
@@ -132,11 +138,13 @@ $(document).ready(function(){
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
+					<center><button id="insert">insert</button></center>
 				</div>
 			</div>
         </div>
-    </div>
-
+	</div>
+	<br/>
+		<div id="googleMap" style="width:500px;height:500px;margin: auto"></div>
     <hr>
 
     <!-- Footer -->
